@@ -1,0 +1,103 @@
+.portfolio {
+   border-bottom: 1px solid rgba(245, 245, 245, 0.641);
+   height: 110dvh;
+   background-color: #060918;
+   z-index: 2;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+   padding-bottom: 30px;
+   gap: 20px;
+
+   .portfolio__title {
+      color: white;
+      font-size: 70px;
+   }
+
+   .portfolio__filter {
+      position: relative;
+      color: white;
+      width: 260px;
+
+      .portfolio__filter-btn {
+         position: relative;
+         z-index: 3;
+         cursor: pointer;
+         margin-bottom: 10px;
+         border-radius: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         font-size: 20px;
+         padding: 10px 20px;
+         border: none;
+         color: white;
+         width: 100%;
+         border: 1px solid rgba(245, 245, 245, 0.29);
+         background: rgb(88, 23, 217);
+         background: radial-gradient(circle, rgba(118, 59, 235, 0.162) 18%, rgba(6, 9, 24, 1) 63%);
+      }
+
+      .portfolio__filter-menu {
+         overflow: hidden;
+         transition: all 10s;
+         border-radius: 5px;
+         position: absolute;
+         z-index: 2;
+         // top: 0
+         left: 0;
+         ;
+         width: 100%;
+         padding: 10px;
+         display: flex;
+         flex-direction: column;
+         background: rgba(0, 0, 0, 0.638);
+         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.418);
+         backdrop-filter: blur(3px);
+         -webkit-backdrop-filter: blur(3px);
+         border: 1px solid rgba(245, 245, 245, 0.29);
+         animation-name: example;
+         animation-duration: 0.4s;
+
+         @keyframes example {
+            from {
+               opacity: 0;
+               top: 0;
+            }
+
+            to {
+               // opacity: 1;
+               top: 55px;
+            }
+         }
+
+         .portfolio__filter-option {
+            color: #8088a2;
+            text-align: left;
+            border: none;
+            background-color: transparent;
+            padding: 10px;
+            transition: all 0.2s;
+            cursor: pointer;
+
+            span {
+               color: white;
+            }
+
+            &:hover {
+               border-radius: 4px;
+               color: white;
+               background: rgb(88, 23, 217);
+               transition: all 0.4s;
+            }
+         }
+      }
+   }
+
+   .portfolio__row {
+      display: flex;
+      gap: 20px;
+   }
+}

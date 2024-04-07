@@ -1,0 +1,56 @@
+
+.project{
+   overflow: hidden;
+   position: relative;
+   text-decoration: none;
+   border-radius: 15px;
+   border: 1px solid rgba(245, 245, 245, 0.255);
+   height: 400px;
+   width: 260px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   &:hover img{
+      height: 110%;
+      width: 110%;
+   }
+   img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+   }
+   .project__div{
+      font-size: 100px;
+      color: white;
+   }
+   h2{
+      // display: none;
+      color: white;
+   }
+   span{
+      position: absolute;
+      bottom: 10px;
+      color: rgb(88, 23, 217);
+   }
+   &:hover .project__hover{
+      opacity: 1;
+      transition: all 0.4s;
+      h2{
+         font-size: 30px;
+         font-weight: 600;
+      }
+   }
+   .project__hover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      opacity: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.633);
+   }
+}
