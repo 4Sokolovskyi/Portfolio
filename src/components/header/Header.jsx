@@ -13,7 +13,7 @@ const Header = () => {
                <div className="header__nav">
                   <a href="/#about" >ABOUT</a>
                   <a href="/#work" >WORK</a>
-                  <a href="/#services" >SERVICES</a>
+                  {/* <a href="/#services" >SERVICES</a> */}
                </div>
                <div className="header__burger">
                   <Hamburger toggled={isBurgerMenuOpen} toggle={setBurgerMenuOpen} />
@@ -22,14 +22,14 @@ const Header = () => {
                   <a href="/" data-replace="PORTFOLIO"><span>PORTFOLIO</span></a>
                </div>
                <div className="header__contact">
-                  <a href="/cotact">Hit me up!</a>
+                  <a href="/#contact">Hit me up!</a>
                </div>
             </nav>
             {
                isBurgerMenuOpen ? <div className="header__menu">
                   <a onClick={() =>setBurgerMenuOpen(false)} href="/#about" >ABOUT</a>
                   <a onClick={() =>setBurgerMenuOpen(false)} href="/#work" >WORK</a>
-                  <a onClick={() =>setBurgerMenuOpen(false)} href="/#services" >SERVICES</a>
+                  {/* <a onClick={() =>setBurgerMenuOpen(false)} href="/#services" >SERVICES</a> */}
                </div> : <></>
             }
          </button>

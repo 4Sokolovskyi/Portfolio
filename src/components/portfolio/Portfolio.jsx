@@ -38,7 +38,7 @@ const Portfolio = () => {
       setDropdownOpen(false)
    }
    return (
-      <section className='portfolio'>
+      <section className='portfolio' id="work">
          <Nameing nameing="WORK" />
          <h2 className="portfolio__title">Dive into my universe</h2>
          <div className="portfolio__filter">

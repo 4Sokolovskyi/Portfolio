@@ -13,12 +13,16 @@
    top: 0;
    z-index: 1;
    .greeting__box {
-      width: 700px;
+      width: 740px;
 
       .greeting__title {
          text-align: center;
          font-size: 80px;
          color: white;
+         @media (max-width: 630px) {
+            font-size: 50px;
+            margin-bottom: 20px;
+         }
       }
 
       .greeting__row {
@@ -26,10 +30,16 @@
          align-items: center;
          justify-content: center;
          gap: 10px;
+         @media (max-width: 740px) {
+            flex-direction: column;
+         }
 
          .offset {
             text-decoration: none;
             font-size: 30px;
+            @media (max-width: 530px) {
+               font-size: 20px;
+            }
             box-shadow:
                0.3em 0.3em 0 0 var(--color),
                inset 0.3em 0.3em 0 0 var(--color);
@@ -51,6 +61,10 @@
             margin: 0.5em;
             padding: 1em 2em;
             font-weight: 600;
+            @media (max-width: 630px) {
+               padding: 15px 20px;
+               font-size: 20px;
+            }
          }
 
          a {
@@ -80,6 +94,9 @@
       .fill {
          font-size: 30px;
          text-decoration: none;
+         @media (max-width: 530px) {
+            font-size: 20px;
+         }
       }
 
       .fill:hover,

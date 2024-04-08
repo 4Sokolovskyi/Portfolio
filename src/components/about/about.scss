@@ -9,13 +9,28 @@
    background-color: #060918;
    display: flex;
 
+   @media (max-width: 700px) {
+      height: 160dvh;
+      flex-direction: column;
+   }
+
    .about__img {
       flex: 1;
-      height: 100%;
+      height: 100dvh;
+
+      @media (max-width: 700px) {
+         width: 100%;
+         height: 60dvh;
+      }
 
       img {
          height: 100%;
          max-width: 100%;
+
+         @media (max-width: 700px) {
+            width: 100%;
+         }
+
          object-fit: cover;
       }
    }
@@ -27,6 +42,8 @@
       gap: 20px;
       align-items: start;
       justify-content: center;
+      padding: 10px;
+
 
       .about__title {
          color: white;
@@ -38,16 +55,20 @@
             padding-left: 10px;
             font-size: 30px;
          }
+
          @keyframes animate {
             0% {
                content: "Development";
             }
+
             25% {
                content: "Persistence";
             }
+
             50% {
                content: "Uniqueness";
             }
+
             75% {
                content: "LVL Up";
             }
@@ -58,6 +79,10 @@
          color: #8088a2;
          font-size: 20px;
          width: 70%;
+
+         @media (max-width: 700px) {
+            width: 90%;
+         }
       }
    }
 }

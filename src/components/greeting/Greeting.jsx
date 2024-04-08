@@ -7,8 +7,8 @@ const Greeting = () => {
          <div className="greeting__box">
             <h1 className="greeting__title">Frontend React Developer</h1>
             <div className="greeting__row">
-               <a href="#" className="offset">Let's get acquainted</a>
-               <a href="#" className="fill">Offset</a>
+               <a href="/#about" className="offset">Let's get acquainted</a>
+               <a href="/#work" className="fill">Projects</a>
             </div>
          </div>
       </section>
