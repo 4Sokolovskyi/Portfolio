@@ -1,8 +1,8 @@
 .portfolio {
    border-bottom: 1px solid rgba(245, 245, 245, 0.641);
-   height: 110dvh;
+   height: 110vh;
    background-color: #060918;
-   z-index: 2;
+   z-index: 2 !important;
    position: relative;
    display: flex;
    flex-direction: column;

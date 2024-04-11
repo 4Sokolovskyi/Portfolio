@@ -4,8 +4,8 @@
    left: 0;
    overflow: hidden;
    position: relative;
-   z-index: 2;
-   height: 100dvh;
+   z-index: 2 !important;
+   height: 100vh;
    background-color: #060918;
    display: flex;
 
