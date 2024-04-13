@@ -13,6 +13,8 @@ const Header = () => {
                <div className="header__nav">
                   <a href="/#about" >ABOUT</a>
                   <a href="/#work" >WORK</a>
+                  <a target="_blanc" href="https://linkedin.com/in/pavlo-sokolovskyi-078958280" >LINKEDIN</a>
+                  <a target="_blanc" href="https://github.com/4Sokolovskyi" >GITHUB</a>
                   {/* <a href="/#services" >SERVICES</a> */}
                </div>
                <div className="header__burger">
@@ -29,6 +31,8 @@ const Header = () => {
                isBurgerMenuOpen ? <div className="header__menu">
                   <a onClick={() =>setBurgerMenuOpen(false)} href="/#about" >ABOUT</a>
                   <a onClick={() =>setBurgerMenuOpen(false)} href="/#work" >WORK</a>
+                  <a onClick={() =>setBurgerMenuOpen(false)} target="_blanc" href="https://linkedin.com/in/pavlo-sokolovskyi-078958280" >LINKEDIN</a>
+                  <a onClick={() =>setBurgerMenuOpen(false)} target="_blanc" href="https://github.com/4Sokolovskyi" >GITHUB</a>
                   {/* <a onClick={() =>setBurgerMenuOpen(false)} href="/#services" >SERVICES</a> */}
                </div> : <></>
             }
